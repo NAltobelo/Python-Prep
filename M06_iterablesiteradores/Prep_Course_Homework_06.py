@@ -3,9 +3,14 @@
 
 # ## Iteradores e iterables
 
-# 1) A partir de una lista vacía, utilizar un ciclo while para cargar allí números negativos del -15 al -1
-
+# 1) A partir de una lista vacía, utilizar un 1ciclo while para cargar allí números negativos del -15 al -
 # In[1]:
+lista1 = []
+i=-15
+while (i<0):
+    lista1.append(i)
+    i += 1
+print(lista1)    
 
 
 
@@ -14,6 +19,11 @@
 # 2) ¿Con un ciclo while sería posible recorrer la lista para imprimir sólo los números pares?
 
 # In[3]:
+n=0
+while n<len(lista1):
+    if lista1[n] % 2 == 0:
+        print(lista1[n])
+    n+=1
 
 
 
@@ -22,7 +32,9 @@
 # 3) Resolver el punto anterior sin utilizar un ciclo while
 
 # In[4]:
-
+for n in lista1:
+    if lista1[n] % 2 == 0:
+        print(lista1[n])
 
 
 
@@ -30,14 +42,16 @@
 # 4) Utilizar el iterable para recorrer sólo los primeros 3 elementos
 
 # In[7]:
-
+for n in lista1[:3]:
+    print(n)
 
 
 
 # 5) Utilizar la función **enumerate** para obtener dentro del iterable, tambien el índice al que corresponde el elemento
 
 # In[9]:
-
+for n in enumerate(lista1):
+    print(n)
 
 
 

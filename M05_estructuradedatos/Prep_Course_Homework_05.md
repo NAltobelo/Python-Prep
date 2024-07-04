@@ -1,6 +1,7 @@
 ## Estructuras de Datos
 
 1) Crear una lista que contenga nombres de ciudades del mundo que contenga más de 5 elementos e imprimir por pantalla
+lista = list[rio_de_janeiro, Buenos_aires, cordoba]
 
 2) Imprimir por pantalla el segundo elemento de la lista
 
